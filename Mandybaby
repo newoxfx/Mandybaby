@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Liebe zu dir</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f8cdd0, #f0e68c);
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #ffcccb;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 0;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin: 20px 0;
+            opacity: 0.7;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .about {
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 30px 10%;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery {
+            text-align: center;
+            padding: 40px;
+            background-color: #e0f7fa;
+            border-radius: 10px;
+            margin: 30px 10%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .images img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        .images img:hover {
+            transform: scale(1.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff6f61;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff4c3b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Meine Liebe zu dir</h1>
+        <h2>Ich liebe dich ❤️</h2>
+    </header>
+
+    <section class="about">
+        <h2>Über Uns</h2>
+        <p>Seit unserem ersten Treffen hat sich alles verändert. Jeder Moment mit dir ist besonders und lässt mein Herz schneller schlagen.</p>
+        <button id="quoteButton">Clique para ver uma citação romântica</button>
+        <p id="quote" style="display: none;">"Ich liebe dich, Mandy!"</p>
+    </section>
+
+    <section class="gallery">
+        <h2>Galeria de Momentos</h2>
+        <div class="images">
+            <img src="foto1.jpg" alt="Momento 1">
+            <img src="foto2.jpg" alt="Momento 2">
+            <img src="foto3.jpg" alt="Momento 3">
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('quoteButton').onclick = function() {
+            const quote = document.getElementById('quote');
+            quote.style.display = 'block';
+        };
+    </script>
+
+</body>
+
+</html>
