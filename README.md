@@ -91,7 +91,7 @@
         <h2>Ein besonderes Zitat</h2>
         <p>
             "Die Liebe ist das einzige, was wächst, indem wir es verschwenden." <br />
-            — Ricarda Huch
+        
         </p>
     </section>
 
